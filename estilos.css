@@ -1,0 +1,357 @@
+body{
+    font-family: 'Heebo', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background: url(img/Fondo.jpg);
+    height: 100vh;
+    background-size: cover;
+    color: whitesmoke;
+}
+
+li{
+    list-style: none;
+    margin-right: 25px;
+}
+
+p{
+    font-size: 25px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor{
+    max-width: 1280px;
+    width: 95%;
+    margin: auto;
+}
+
+ul{
+    display: flex;
+}
+
+a{
+    font-size: 20px;
+    text-decoration: none;
+    color: whitesmoke;
+    background:teal;
+    padding: 20px 40px 20px 40px;
+    transition: 0.5s;
+}
+
+a:hover{
+    color: black;
+    transition: 0.5s;
+}
+
+.encabezados{
+    text-align: center;
+    margin-top: 200px;
+}
+
+h1{
+    font-size: 60px;
+    margin: 0;
+}
+
+h2{
+    margin-bottom: 40px;
+}
+
+/*Seccion sobre mi */
+
+h3{
+    text-align: center;
+    font-size: 60px;
+    font-weight: normal;
+}
+
+.contenedor-sobremi{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor-parrafo-boton{
+    width: 42%;
+}
+
+.contenedor-parrafo-boton p{
+    text-align: justify;
+    font-size: 22px;
+}
+
+.parrafo{
+    margin-bottom: 30px;
+}
+
+.contenedor-servicios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.servicio{
+    width: 23%;
+    padding: 55px 38px 55px 38px;
+    border-radius: 15px;
+    margin-bottom: 45px;
+    color: white;
+}
+
+.color-a{
+    background-color:#5055df;
+}
+
+.color-b{
+    background-color:#40a8fa;
+}
+
+.servicio h4{
+    font-size: 30px;
+    margin: 0;
+}
+
+.servicio p{
+    text-align: justify;
+    font-size: 20px;
+}
+
+.servicio img{
+    float: right;
+}
+
+/* Seccion owcarousel*/
+
+span{
+    font-size: 80px;
+    color:blue
+}
+
+.owl-nav{
+    text-align: center;
+}
+
+/* sección ¿por qué trabajar conmigo? */
+
+.porque{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+.porque p{
+    text-align: justify;
+}
+
+.porque h4{
+    font-size: 25px;
+    margin: 0;
+}
+
+.porque-segundo{
+    width: 24%;
+    box-shadow: 1px 1px 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+/*sección blog*/
+
+.contenedor-publicaciones{
+    display: flex;
+    justify-content: space-around;
+}
+
+.publicaciones{
+    width: 28%;
+    box-shadow: 1px 1px 14px;
+    padding-bottom: 20px;
+}
+
+#blog {
+    background: #f2f3f7;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#blog img{
+    width: 100%;
+}
+
+#blog h4{
+    font-size: 23px;
+    margin: 0;
+    padding: 20px;
+}
+
+#blog p{
+    font-size: 25px;
+    line-height: 25px;
+    margin: 0;
+    padding: 10px 20px 20px 20px;
+    text-align: justify;
+}
+
+#blog a{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.boton-rejego{
+    margin-top: 25px;
+}
+
+/*Seccion Final*/
+
+.seccion-final{
+    background: linear-gradient(rgba(84,93,220,.45),
+                                 rgba(96,171,245,.15));
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
+
+.seccion-final h3{
+    font-size: 23px;
+    color:black;
+    margin-bottom: 40px;
+}
+
+.seccion-final a{
+    padding: 15px 45px 15px 45px;
+}
+
+.whatsapp a{
+    background: none;
+    padding: 0;
+    position: fixed;
+    top: 85%;
+    right: 1%;
+}
+
+/*Diseño Responsivo*/
+
+.menu-icon{
+    display: none;
+}
+
+@media(max-width: 480px){
+
+    h1{
+        font-size: 50px;
+    }
+
+    h2{
+        font-size: 20px
+    }
+
+    h3{
+        font-size: 50px;
+    }
+
+    /*Header*/
+    nav{
+        position: absolute;
+        top: 100px;
+        left: 0px;
+        background-color:#3c3535;
+        width: 100%;
+        display: none;
+    }
+
+    header{
+        background-position: 74%;
+    }
+
+    ul{
+        flex-direction: column;
+        display: flex;
+    }
+
+    .menu-icon{
+        display: block;
+        width: 40px;
+        padding-bottom: 10px;
+    }
+
+    .encabezados{
+        margin-top: 130px;
+    }
+
+    /*Seccion sobre mi*/
+
+    .contenedor-sobremi{
+        flex-direction: column;
+    }
+
+    .contenedor-parrafo-boton{
+        width: 83%;
+    }
+
+    .contenedor-parrafo-boton p{
+        font-size: 20px;
+    }
+
+    .contenedor-parrafo-boton a{
+        margin-left: 14%;
+        padding: 16px 29px;
+    }
+
+    /*Seccion Servicios*/
+    .contenedor-servicios{
+        flex-direction: column;
+    }
+
+    .servicio{
+        width: 63%;
+        margin-left: 8.1%;
+    }
+
+    /*Porque Trabajar Conmigo*/
+    .porque{
+        flex-direction: column;
+    }
+
+    .porque-segundo{
+        width: 86%;
+        margin: auto;
+        margin-bottom: 8%;
+    }
+
+    /*Blog*/
+    .contenedor-publicaciones{
+        flex-direction: column;
+    }
+
+    .publicaciones{
+        width: 68%;
+        margin: auto;
+        margin-bottom: 8%;
+    }
+
+    /*Seccion Final*/
+    .seccion-final h3{
+        font-size: 17px;
+    }
+
+    .seccion-final a{
+        padding: 10px 30px;
+    }
+}
+
+@media (min-width: 700px) and (max-width:900px){
+    header{
+        height: 45vh;
+    }
+
+    .encabezados{
+        margin-top: 10px;
+    }
+}
